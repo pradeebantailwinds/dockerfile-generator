@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	dfg "github.com/ozankasikci/dockerfile-generator"
+	dfg "github.com/pradeebantailwinds/dockerfile-generator"
 )
 
 func main() {

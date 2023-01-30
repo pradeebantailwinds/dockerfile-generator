@@ -100,7 +100,7 @@ func (f From) Render() string {
 
 // changes made
 type ExposeCommand struct {
-	Expose string `yaml:"compose"`
+	Expose string `yaml:"expose"`
 }
 
 // Render returns a string in the form of FROM <image> [AS <name>]

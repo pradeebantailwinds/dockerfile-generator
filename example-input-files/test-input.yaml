@@ -33,9 +33,9 @@ stages:
         params:
           - echo
           - test
-    - exposeCommand:
-        expose:
-          - 80/tcp
+    - expose:
+        expose: "80/tcp"
+
   final:
     - from:
         image: alpine:latest
@@ -75,6 +75,5 @@ stages:
           - -command
     - workdir:
         dir: "test dir"
-    - exposeCommand:
-        expose:
-          - -80/tcp
+    - expose:
+        expose: "80/tcp"

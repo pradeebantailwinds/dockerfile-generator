@@ -396,7 +396,6 @@ func cleanUpMapIIComplexInstructions(instructionName string, value interface{}) 
 		return cleanUpRunCommand(v)
 	case "shell":
 		return cleanUpShell(v)
-
 	}
 
 	panic(errorStringWithType(value))
