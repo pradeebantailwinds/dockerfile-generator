@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	dfg "github.com/ozankasikci/dockerfile-generator"
+	dfg "github.com/pradeebantailwinds/dockerfile-generator"
 	"github.com/spf13/cobra"
 )
 

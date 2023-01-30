@@ -1,4 +1,4 @@
-module github.com/ozankasikci/dockerfile-generator
+module github.com/pradeebantailwinds/dockerfile-generator
 
 go 1.13
 

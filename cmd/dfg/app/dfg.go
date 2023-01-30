@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/ozankasikci/dockerfile-generator/cmd/dfg/cmd"
+	"github.com/pradeebantailwinds/dockerfile-generator/cmd/dfg/cmd"
 )
 
 // Run is the entrypoint for the dfg command

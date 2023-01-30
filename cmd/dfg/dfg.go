@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/ozankasikci/dockerfile-generator/cmd/dfg/app"
 	"os"
+
+	"github.com/pradeebantailwinds/dockerfile-generator/cmd/dfg/app"
 )
 
 func main() {
