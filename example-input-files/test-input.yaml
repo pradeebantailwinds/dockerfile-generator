@@ -75,6 +75,6 @@ stages:
           - -command
     - workdir:
         dir: "test dir"
-    - egggxposeCommand:
+    - exposeCommand:
         expose:
           - -80/tcp
