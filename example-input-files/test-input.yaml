@@ -34,7 +34,7 @@ stages:
           - echo
           - test
     - expose:
-        expose: "80/tcp"
+        port: "80/tcp"
 
   final:
     - from:
@@ -76,4 +76,4 @@ stages:
     - workdir:
         dir: "test dir"
     - expose:
-        expose: "80/tcp"
+        port: "80/tcp"

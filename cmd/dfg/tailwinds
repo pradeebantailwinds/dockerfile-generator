@@ -1,0 +1,26 @@
+FROM alpine:latest as builder
+WORKDIR /app
+USER ozan
+ARG test-arg=arg-value
+RUN test -n "${test-arg}"
+ENV test-arg="${test-arg}"
+VOLUME some/source ./some/destination
+RUN echo "test" 1
+ENV env=dev
+COPY --chown=me:me /etc/conf /opt/app/conf
+ONBUILD echo test
+EXPOSE 80/tcp
+
+FROM alpine:latest as final
+ARG test-arg=arg-value
+RUN test -n "${test-arg}"
+ENV test-arg="${test-arg}"
+LABEL label1=label-value
+ENV DB_PASSWORD=password
+CMD echo test
+ENTRYPOINT ["echo", "test"]
+HEALTHCHECK --interval=DURATION --timeout=3s CMD curl -f http://localhost/
+SHELL ["powershell", "-command"]
+WORKDIR test dir
+EXPOSE 80/tcp
+

@@ -107,8 +107,8 @@ func cleanUpExpose(value yamlMapStringInterface) ExposeCommand {
 	v := convertMapSIToMapSS(value)
 	var expose ExposeCommand
 
-	if v["expose"] != "" {
-		expose.Expose = v["expose"]
+	if v["port"] != "" {
+		expose.Expose = v["port"]
 	}
 
 	return expose
